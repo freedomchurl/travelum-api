@@ -5,13 +5,16 @@ plugins {
 }
 
 group = 'com.vaninside'
-version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
 	}
+}
+
+jar {
+	enabled = false
 }
 
 repositories {
